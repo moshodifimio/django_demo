@@ -30,6 +30,7 @@ MIDDLEWARE = [
 ]
 
 ROOT_URLCONF = 'urls'  # Just the module name
+APPEND_SLASH = False
 
 TEMPLATES = [
     {
