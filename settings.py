@@ -65,5 +65,3 @@ STATIC_URL = 'static/'
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-# Ensure CSRF protection is properly configured for testing environment
-CSRF_TRUSTED_ORIGINS = ['https://fimio.net']
