@@ -29,7 +29,7 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
-ROOT_URLCONF = 'myproject.urls'
+ROOT_URLCONF = 'django_demo.urls'  # Changed from myproject.urls to django_demo.urls
 
 TEMPLATES = [
     {
@@ -47,7 +47,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'myproject.wsgi.application'
+WSGI_APPLICATION = 'django_demo.wsgi.application'  # Changed from myproject.wsgi to django_demo.wsgi
 
 DATABASES = {
     'default': {
@@ -64,6 +64,3 @@ USE_TZ = True
 STATIC_URL = 'static/'
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
-
-# Ensure CSRF protection is properly configured for testing environment
-CSRF_TRUSTED_ORIGINS = ['https://fimio.net']
